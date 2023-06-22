@@ -3,12 +3,17 @@
     // Elaborar um programa para um estacionamento. O programa deve ler o valor para cada hora que o veículo ficará estacionado e o tempo que a pessoa utilizou em minutos. Informe o valor a ser pago pelo cliente, sabendo que as frações de hora devem ser cobradas de forma integral.
 
     //ENTRADA
+    const valor = Number(prompt(`Qual é o valor cobrado por hora para ficar no estacionamento?`));
+    const horas = Number(prompt(`Quantas horas o veículo ficou no estacionamento?`));
 
-    
     //PROCESSAMENTO
-
+    let valortotal = valor * horas;
+    let min = horas * 60;
+    let valorcobrado = valor * min / 60;
 
     //SAÍDA
+    
+    alert (`O valor que o cliente irá pagar é de ${valorcobrado}`);
 
 
 </script>

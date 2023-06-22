@@ -3,11 +3,14 @@
     //Elaborar um programa que pergunte ao usuário quantas horas e quantos minutos de duração a viagem possui. Calcule e informe a duração total da viagem em número de minutos.
     
     //ENTRADA
+    const horas = Number(prompt(`Informe quantas horas a viagem durou`));
+    const min = Number(prompt(`Além dessas horas, quantos minutos a mais?`));
 
 
     //PROCESSAMENTO
-
+    const total = horas * 60 + min
 
     //SAÍDA
+    alert (`A viagem durou ${total} minutos`);
     
 </script>

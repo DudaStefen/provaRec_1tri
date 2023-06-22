@@ -8,12 +8,16 @@
     */
 
     //ENTRADA
-
+    const saláriofixo = Number(prompt(`Informe qual é o slário fixo pago por mês:`));
+    const carros = Number(prompt(`Qual é a quantidade de carros vendidos por mês?`));
+    const valorcarro = Number(prompt(`Qual é o valor total dos carros vendidos pelo funcionário?`));
 
     //PROCESSAMENTO
-
-
+    let imposto = salárioTotal * 27 / 100
+    let comissao = valorcarro * 5 / 100;
+    let salárioTotal = saláriofixo + 300 + comissao - imposto;
+    
     //SAÍDA
-
+    alert (`O valor total a ser recebido é de ${salárioTotal}`);
 
 </script>

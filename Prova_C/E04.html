@@ -4,12 +4,14 @@
     // Faça um script que leia o custo de fábrica do celular e calcule os custos adicionais, apresentando o custo final do celular ao comprador.
 
     //ENTRADA
-
+    const custodefabrica = Number(prompt(` Qual é o custo de fábrica para produzir o celular?`));
     
     //PROCESSAMENTO
-
+    let importação = custodefabrica * 40 / 100;
+    let logDis = custodefabrica * 40 / 100;
+    let custoTotal = custodefabrica + importação + logDis;
 
     //SAÍDA
-
+    alert (`O custo total do celular é R$ ${custoTotal}`);
 
 </script>

@@ -4,11 +4,13 @@
     // Por exemplo, entre 80 pessoas abordadas, apenas 20 possuem acesso à algum serviço de streaming, o que equivale a 25% destas 80 pessoas abordadas.
 
     //ENTRADA
-
+    const pessoasAbordadas = Number(prompt(`Quantas pessoas foram abordadas?`));
+    const acesso = Number(prompt(`Entre essas pessoas, quantas delas tem acesso a qualquer serviço de streaming?`));
 
     //PROCESSAMENTO
-    
+    let porcentagem = pessoasAbordadas / acesso;
 
     //SAÍDA
+    alert (`entre ${pessoasAbordadas} pessoas abordadas, apenas ${acesso} possuem acesso à algum serviço de streaming, o que equivale a ${porcentagem}% destas pessoas abordadas`);
 
 </script>
